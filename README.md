@@ -8,9 +8,9 @@ source: [slides from R-Ladies Remote](bit.ly/pkg-dev-1)
 
 ### where are packages located on my machine?
 
--   default R library: run `.Library`
+-   see default R library: enter `.Library` in R command window
 -   you may or may not have write access to the default library
--   additional libraries that R knows about: `.libPaths()`
+-   see additional libraries that R knows about: `.libPaths()`
 
 ### where do R packages come from?
 
@@ -67,3 +67,20 @@ source: [slides from R-Ladies Remote](bit.ly/pkg-dev-1)
 -   if a package is installed, `library()` makes its functions available by loading into memory
 
 -   when developing, instead of using `library()`, we will use `devtools::load_all()` to load a source package directly into memory for interactive stepping-through package R code
+
+
+## part 2: setting up your system
+
+source: [slides from R-Ladies Remote](bit.ly/pkg-dev-1)
+
+### devtools
+
+- makes package development easier by providing R functions that simplify and expedite common tasks
+- installs source packages from Github/elsewhre
+- installs and develops packages that you like
+
+### check that your system is ready for package development
+
+- install Xcode (if on mac)
+- install `devtools` and run `devtools::has_devel()`
+- install git
